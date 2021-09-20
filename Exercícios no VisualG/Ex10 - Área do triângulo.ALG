@@ -1,21 +1,24 @@
-Algoritmo "¡rea do tri‚ngulo"
-// Disciplina   : [LÛgica de ProgramaÁ„o e JavaScript]
+Algoritmo "√Årea do tri√¢ngulo"
+// Disciplina   : [L√≥gica de Programa√ß√£o e JavaScript]
 // Professor   : Jailson 
-// DescriÁ„o   : Calcula a ·rea de um tri‚ngulo
+// Descri√ß√£o   : Calcula a √°rea de um tri√¢ngulo
 // Autor(a)    : Geovanna Souza Cordeiro Silva
 // Data atual  : 24/08/2021
 Var
-// SeÁ„o de DeclaraÁıes das vari·veis 
-base:inteiro
-altura:inteiro
-area:real
+// Se√ß√£o de Declara√ß√µes das vari√°veis 
+L1, L2, L3: Real
+EQ, ES: Logico
+
 
 Inicio
-// SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc... 
-Escreval("Digite o valor da base do tri‚ngulo: ")
-Leia(base)
-Escreval("Digite o valor da altura do tri‚ngulo: ")
-Leia(altura)
-area<-(base*altura)/2
-Escreval("A ·rea do tri‚ngulo È: ",area)
-Fimalgoritmo
+// Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc... 
+Escreva ("Digite o primeiro lado: ")
+leia (L1)
+Escreva ("Digite o segundo lado: ")
+leia (L2)
+Escreva ("Digite o terceiro lado: ")
+leia (L3)
+EQ <- (L1 = L2) e (L2 = L3)
+ES <- (L1 <> L2) e (L2 <> L3) e (L1 <> L3)
+Escreval ("O triangulo √© EQUILATERO? ", EQ)
+Escreval ("O triangulo √© ESCALENO ? ", ES)
