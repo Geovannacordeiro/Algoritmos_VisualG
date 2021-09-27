@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Soma e média de 10 valores">
+    <meta name="keywords" content="Javascript, Aula, manzano">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <title>10 valores e média aritmética</title>
+</head>
+<body>
+   <!-- Elaborar um programa que efetue a leitura de 10 valores numéricos e apresente no final o total do 
+somatório e a média aritmética dos valores lidos.  -->
+ 
+
+
+  <script>
+
+      var i = 0, soma = 0, num;
+      while(i < 10) {
+          num = parseFloat(prompt(`Digite o número ${i + 1}: `));
+          soma = soma + num;
+          i++;
+      }
+      alert(`Soma = ${soma}\nMédia = ${soma/i}`); 
+
+  </script>
+</body>
+</html>

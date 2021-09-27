@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Geovanna Souza Cordeiro Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ler dois valores e imprimir uma das três mensagens a seguir:  </title>
+</head>
+
+<body>
+ <!-- ‘Números iguais’, caso os números sejam iguais
+‘Primeiro é maior’, caso o primeiro seja maior que o segundo;
+‘Segundo maior’, caso o segundo seja maior que o primeiro.  -->
+
+    <script>
+        var valor1 = parseFloat(prompt("Digite o primeiro valor"));
+        var valor2 = parseFloat(prompt("Digite o segundo valor"));
+
+        if (valor1 > valor2) {
+            alert(valor1 + " e maior do que " + valor2);
+        } else if (valor1 == valor2) {
+            alert("Os valores são iguais.");
+        } else {
+            alert(valor2 + " é maior do que " + valor1);
+        }
+    </script>
+</body>
+</html>

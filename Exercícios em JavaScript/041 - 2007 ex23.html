@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Geovanna Souza Cordeiro Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enunciado a segui:</title>
+</head>
+
+<body>
+<!-- Para o enunciado a seguir foi elaborado um algoritmo em Português Estruturado que contém
+erros, identifique os erros no algoritmo apresentado abaixo:
+Enunciado: Tendo como dados de entrada o nome, a altura e o sexo (M ou F) de uma pessoa, calcule
+e mostre seu peso ideal,   -->
+    <script>
+        var nome = prompt("Digite o seu nome: ");
+        var sexo = prompt("Digite o seu sexo (M ou H):  ");
+        var altura = prompt("Digite a sua altura (metros): ");
+        var pesoIdeal
+
+        if (sexo == "h") {
+            pesoIdeal = 72.7 * altura - 58;
+        } else {
+            pesoIdeal = 62.1 * altura - 44.7;
+        }
+
+        alert(nome + ", seu peso ideal é de " + pesoIdeal + "kg.");
+    </script>

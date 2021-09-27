@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="JavaScript, Código, Lógica">
+    <meta name="description" content="Fibonacci">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <title>Fibonacci</title>
+</head>
+<body>
+    <script>
+        /*Escreva um programa que apresente a série de Fibonacci até o décimo quinto termo. A série de
+        Fibonacci é formada pela seqüência: 1, 1, 2, 3, 5, 8, 13, 21, 34, ..., etc. Esta série se caracteriza
+        pela soma de um termo atual com o seu anterior subseqüente, para que seja formado o próximo
+        valor da seqüência. Portanto começando com os números 1, 1 o próximo termo é 1+1=2, o próximo
+        é 1+2=3, o próximo é 2+3=5, o próximo 3+5=8, etc.*/
+        var atual = 1 ;
+        var anterior = 0;
+        var x = 1;
+        while (x < 21){
+            x = x + 1;
+            var novo = atual + anterior;
+            anterior = atual;
+            atual = novo;
+            alert(novo);
+        }
+    </script>
+</body>
+</html>
+

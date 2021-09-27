@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="JavaScript, Código, Lógica">
+    <meta name="description" content="Cinco Valores">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <title>Cinco Valores</title>
+</head>
+<body>
+    <script>
+        /*Efetuar a leitura de cinco números inteiros e identificar o maior e o menor valores.*/
+        var a = parseInt(prompt("Digite o 1° valor: "));
+        var b = parseInt(prompt("Digite o 2° valor: "));
+        var c = parseInt(prompt("Digite o 3° valor: "));
+        var d = parseInt(prompt("Digite o 4° valor: "));
+        var e = parseInt(prompt("Digite o 5° valor: "));
+        if (a > b && a > c && a > d && a > e){
+            alert("O maior número é "+a);   
+        }else if(b > a && b > c && b > d && b > e){
+            alert("O maior número é "+b);  
+        }else if(c > a && c > b && c > d && c > e){
+            alert("O maior número é "+c); 
+        }else if(d > a && d > b && d > c && d > e){
+            alert("O maior número é "+d); 
+        }else if(e > a && e > b && e > c && e > d){
+            alert("O maior número é "+e);
+        }
+        if (a < b && a <  c && a <  d && a <  e){
+            alert("O menor número é "+a);   
+        }else if(b <  a && b <  c && b <  d && b <  e){
+            alert("O menor número é "+b);  
+        }else if(c < a && c < b && c < d && c < e){
+            alert("O menor número é "+c); 
+        }else if(d < a && d < b && d < c && d < e){
+            alert("O menor número é "+d); 
+        }else if(e < a && e < b && e < c && e < d){
+            alert("O menor número é "+e);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Geovanna Souza Cordeiro Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> número da conta do cliente, saldo, débito e crédito. </title>
+</head>
+
+<body>
+<!-- Faça um algoritmo para ler: número da conta do cliente, saldo, débito e crédito. Após, calcular e
+escrever o saldo atual (saldo atual = saldo - débito + crédito). Também testar se saldo atual for maior
+ou igual a zero escrever a mensagem 'Saldo Positivo', senão escrever a mensagem 'Saldo Negativo' -->
+
+    <script>
+        var conta = parseInt(prompt("Digite o número da conta:"));
+        var saldo = parseFloat(prompt("Digite o saldo da conta em reais:"));
+        var debito = parseFloat(prompt("Digite o débito da conta em reais:"));
+        var credito = parseFloat(prompt("Digite o crédito da conta em reais:"));
+        
+        saldo = saldo + credito - debito;
+
+        if (saldo >= 0) {
+            prompt("A conta " + conta + " tem o saldo atual de R$:" + (saldo).toFixed(2) + "\nSaldo positivo.");
+        } else {
+            prompt("A conta " + conta + " tem o saldo atual de R$:" + (saldo).toFixed(2) + "\nSaldo negativo.");
+
+        }
+    </script>
+</body>
+</html>

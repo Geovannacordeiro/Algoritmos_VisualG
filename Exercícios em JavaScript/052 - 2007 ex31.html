@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Geovanna Souza Cordeiro Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> (A, B e C) </title>
+</head>
+
+<body>
+<!-- Ler 3 valores (A, B e C) representando as medidas dos lados de um triângulo e escrever se formam
+ou não um triângulo. OBS: para formar um triângulo, o valor de cada lado deve ser menor que a soma
+dos outros 2 lados.  -->
+
+
+
+
+<script>
+
+    var valor1 = parseFloat(prompt("Digite o primeiro valor valor"));
+    var valor2 = parseFloat(prompt("Digite o segundo valor valor"));
+    var valor3 = parseFloat(prompt("Digite o terceiro valor valor"));
+
+    if (valor1 < valor2 + valor3 && valor2 < valor1 + valor3 && valor3 < valor1 + valor2) {
+        alert("Esses valores podem representam os lados de um triângulo");
+    } else {
+        alert("Esses valores não podem respresentar os lados de um triângulo");
+    }
+
+</script>
+   
+</body>
+</html>

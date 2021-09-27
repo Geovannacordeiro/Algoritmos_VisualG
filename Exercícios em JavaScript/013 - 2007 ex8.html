@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="keywords" content="Política, Eleitores, Lógica">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <meta name="description" content="Eleitores">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleitores</title>
+</head>
+<body>
+
+    <script>
+
+        // console.log(`A porcentagem de votos brancos corresponde a: ${perVotBranco}% de Eleitores`)
+        // console.log(`A porcentagem de votos nulos corresponde a: ${perVotNulo}% de Eleitores`)
+        // console.log(`A porcentagem de votos válidos corresponde a: ${perVotValidos}% de Eleitores`)
+
+        var cidade = prompt("Digite o nome da Cidade")
+        var totalEleitores = parseInt(prompt(`Qual o total de eleitores de(a) ${cidade}`))
+        var votosBranco = parseInt(prompt("Qual é o total de votos brancos?"))
+        var votosNulos = parseInt(prompt("Qual é o total de votos nulos "))
+        var votosValidos = parseInt(prompt("Qual é o total de votos válidos")) 
+        var perVotBranco = (votosBranco/totalEleitores)*100
+        var perVotNulo = (votosNulos/totalEleitores)*100
+        var perVotValidos = (votosValidos/totalEleitores)*100
+
+        window.alert(`A porcentagem de votos brancos corresponde a: ${perVotBranco}% de Eleitores`)
+        window.alert(`A porcentagem de votos nulos corresponde a: ${perVotNulo}% de Eleitores`)
+        window.alert(`A porcentagem de votos válidos corresponde a: ${perVotValidos}% de Eleitores`)
+
+    </script>
+</body>
+</html>

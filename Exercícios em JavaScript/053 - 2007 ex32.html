@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Geovanna Souza Cordeiro Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> nome de 2 times e o número de gols marcados na partid </title>
+</head>
+
+<body>
+<!-- ) Ler o nome de 2 times e o número de gols marcados na partida (para cada time). Escrever o nome
+do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE.  -->
+
+<script>
+    var time1 = prompt("Digite o nome do primeiro time");
+    var pont1 = parseInt(prompt("Digite a pontuação desse time"));
+    var time2 = prompt("Digite o nome do segundo time");
+    var pont2 = parseInt(prompt("Digite a pontuação desse time"));
+
+    if (pont1 == pont2) {
+        alert("A partida terminou em empate");
+    } else if (pont1 > pont2) {
+        alert("Vencedor foi o time " + time1);
+    } else {
+        alert("Vencedor foi o time " + time2);
+    }
+</script>
+</body>
+</html>

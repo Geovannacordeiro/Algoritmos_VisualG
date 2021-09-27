@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Geovanna Souza Cordeiro Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 3 valores e escrever o maior deles</title>
+</head>
+
+<body>
+ <!-- Ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.  -->
+    <script>
+        var valor1 = parseFloat(prompt("Digite o primeiro valor valor"));
+        var valor2 = parseFloat(prompt("Digite o segundo valor valor"));
+        var valor3 = parseFloat(prompt("Digite o terceiro valor valor"));
+
+        if (valor1 > valor2 & valor1 > valor3) {
+            alert("O maior valor digitado foi " + valor1);
+        } else if (valor2 > valor3) {
+            alert("O maior valor digitado foi " + valor2);
+        } else {
+            alert("O maior valor digitado foi " + valor3);
+        }
+    </script>
+</body>
+</html>

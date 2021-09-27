@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="keywords" content="JavaScript, Programação, Lógica">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <meta name="description" content="Equação do Segundo Grau">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor de Delta</title>
+</head>
+<body>
+    <!-- Efetuar a leitura de três valores (variáveis A, B e C) e efetuar o cálculo da equação completa de 
+         segundo grau, apresentando as duas raízes, se para os valores informados for possível efetuar o 
+         referido cálculo. Lembre-se de que a variável A deve ser diferente de zero -->
+
+
+
+    <script>
+
+        var A = parseFloat(prompt("Digite o valor de A: "))
+        var B = parseFloat(prompt("Digite o valor de B: "))
+        var C = parseFloat(prompt("Digite o valor de C: "))
+        var DELTA = (B * B) - 4 * A * C
+        if (DELTA < 0) {
+            alert("Não há raizes reais")
+        } else if (DELTA == 0) {
+            var x1 = B / 2 * A
+            alert(`Uma única raiz rela: x = ${x1}`)
+        } else if (DELTA > 0) {
+            x1 = (-B + Math.sqrt(DELTA)) / (2 * A)
+            x2 = (-B + Math.sqrt(DELTA)) / (2 * A)
+            alert(`Duas Raízes reais e diferentes: \nx1 = ${x1} & x3 = ${x2}`)
+        }
+
+    </script>
+</body>
+</html>
+
+
+

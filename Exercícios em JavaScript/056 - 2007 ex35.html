@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Geovanna Souza Cordeiro Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Um posto está vendendo combustíveis com a seguinte tabela de descontos:</title>
+</head>
+
+
+<body>
+<!-- Escreva um algoritmo que leia o número de litros vendidos e o tipo de combustível (codificado da
+seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-se
+que o preço do litro da gasolina é R$ 3,30 e o preço do litro do álcool é R$ 2,90. -->
+    <script>
+        var combustivel = prompt("Digite o tipo de combustível que desejas comprar: Alcool(A) ou Gasolina(G): ");
+        var litros = parseInt(prompt("Digite a quantidade de litros que deseja comprar: "));
+
+        if (litros < 20) {
+            if (combustivel == "G") {
+                alert("O preço de " + litros + " litros de gasolina será de R$:" + ((litros - litros * 0.04) * 3.3).toFixed(2));
+            } else {
+                alert("O preço de " + litros + " litros de alcool será de R$:" + ((litros - litros * 0.03) * 2.9).toFixed(2));
+            }
+        } else if (combustivel == "G") {
+            alert("O preço de " + litros + " litros de gasolina será de R$:" + ((litros - litros * 0.06) * 3.3).toFixed(2));
+        } else {
+            alert("O preço de " + litros + " litros de alcool será de R$:" + ((litros - litros * 0.05) * 2.9).toFixed(2));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Geovanna Souza Cordeiro Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maçãs</title>
+</head>
+
+<body>
+<!-- As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem
+compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e
+escreva o custo total da compra.  -->
+    <script>
+        var macas = parseInt(prompt("Digite o número de maças compradas:"));
+        if (macas < 12) {
+            totalmacas = macas * 1.30;
+            alert("O preço total é de: R$" + totalmacas);
+        } else {
+            totalmacas = macas * 1;
+            alert("O preço total é de: R$" + totalmacas);
+        }
+    </script>
+</body>
+
+</html>

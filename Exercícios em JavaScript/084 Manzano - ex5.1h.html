@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="JavaScript, Código, Lógica">
+    <meta name="description" content="Celsius-Fahrenheit">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <title>Celsius-Fahrenheit</title>
+</head>
+<body>
+    <script>
+        /*Elaborar um programa que apresente os valores de conversão de graus Celsius em Fahrenheit, de
+        10 em 10 graus, iniciando a contagem em 10 graus Celsius e finalizando em 100 graus Celsius. O
+        programa deve apresentar os valores das duas temperaturas.*/
+        var c = 0 ;
+        var f = 0;
+        alert("A conversão de graus Celsius em Fahrenheit de 10 em 10 graus é: ")
+        while (c < 100){
+            c = c + 10;
+            f = ((9 * c) + 160) / 5;
+            alert(c+" em graus Celsius é "+f+" graus Fahrenheit");
+        }
+    </script>
+</body>
+</html>
+

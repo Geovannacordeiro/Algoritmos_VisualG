@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="keywords" content="Idade, Dias, Lógica">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <meta name="description" content="Calcula a Idade">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+</head>
+<body>
+    <!-- Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade
+         dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias.  -->
+
+
+    <script>
+
+    var anos = parseInt(prompt("Digite quantos de vida você tem: "))
+    var meses = parseInt(prompt("Além dos anos, quantos meses de vida você tem? "))
+    var dias = parseInt(prompt("E pra finalizar, quantos dias de vida você tem? "))
+    var resultado = (anos*365) + (meses*30) + dias
+    alert(`Somando a quantidade de anos, meses e dias, você tem exaxtamente ${resultado} dias de vida.`)
+    
+    </script>
+</body>
+</html>

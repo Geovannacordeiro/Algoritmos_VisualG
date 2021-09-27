@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="JavaScript, Código, Lógica">
+    <meta name="description" content="Soma dos Cem Primeiros Números">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <title>Soma dos Cem Primeiros Números</title>
+</head>
+<body>
+    <script>
+        /*Apresentar o total da soma obtida dos cem primeiros números inteiros (1+2+3+4+...+98+99+100).*/
+        var acul = 0;
+        var cont = 0; 
+        while (cont<101){
+            acul = cont+acul;
+            cont = cont+1;
+        }
+        alert("A soma dos cem primeiros números inteiros é "+acul);
+    </script>
+</body>
+</html>

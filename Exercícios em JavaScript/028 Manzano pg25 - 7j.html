@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="JavaScript, Código, Lógica">
+    <meta name="description" content="Conversão de Dólar para Real">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <title>Conversão de Dólar para Real</title>
+</head>
+<body>
+    <!--Elaborar um programa que efetue a apresentação do valor da conversão em real de um valor lido em
+        dólar. O programa deve solicitar o valor da cotação do dólar e também a quantidade de dólares
+        disponível com o usuário, para que seja apresentado o valor em moeda brasileira.-->
+
+    <script>
+
+        var cotacao = parseFloat(prompt("Digite o valor de cotação do dólar hoje: "));
+        var dolar = parseFloat(prompt("Digite quantos dólares você deseja converter: "));
+        var real = cotacao * dolar;
+        alert("Seus $"+dolar+" dólares são R$"+real+" reais.");
+
+    </script>
+</body>
+</html>

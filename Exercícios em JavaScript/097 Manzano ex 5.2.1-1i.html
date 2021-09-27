@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Maior e menor valor">
+    <meta name="keywords" content="Javascript, Aula, manzano">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <title>Leitura de valores positivos inteiros até que um valor negativo 
+        seja informado</title>
+</head>
+<body>
+    <!-- Elaborar um programa que efetue a leitura de valores positivos inteiros até que um valor negativo 
+            seja informado. Ao final devem ser apresentados o maior e o menor valores informados pelo 
+            usuário. -->
+
+
+
+    <script >
+        var valor = 0,
+            maior = 0,
+            menor = 0;
+        valor = parseInt(prompt("Informe um número inteiro: "));
+        menor = valor;
+        do {
+            if (valor > maior) {
+                maior = valor;
+            }
+            if (valor < menor) {
+                menor = valor;
+            }
+            valor = parseInt(prompt("Informe um número inteiro: "));
+        } while (valor >= 0);
+        alert("Para ver o resultado, abra o console.")
+        console.log(`Maior - ${maior}\nMenor - ${menor}`);
+
+    </script>
+</body>
+</html>

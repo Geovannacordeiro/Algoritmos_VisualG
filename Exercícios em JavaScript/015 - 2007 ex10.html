@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="keywords" content="JavaScript, Programação, Lógica">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <meta name="description" content="Calcula o custo final do carro">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo do Carro</title>
+</head>
+<body>
+    <!-- O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do
+         distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor
+         seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro,
+         calcular e escrever o custo final ao consumidor.  -->
+
+
+    <script>
+
+        var custoFabrica = parseFloat(prompt("Digite o custo de fábrica do carro: "))
+        var custoFinal = custoFabrica + (custoFabrica * 28/100) + (custoFabrica * 45/100)
+        alert(`O custo final totaliza R$${custoFinal} para o cliente.`)
+        
+    </script>
+</body>
+</html>

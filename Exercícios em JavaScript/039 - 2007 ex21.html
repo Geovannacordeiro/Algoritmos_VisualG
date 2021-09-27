@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Geovanna Souza Cordeiro Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a hora de início e a hora de fim de um jogo de Xadrez</title>
+</head>
+
+<body>
+<!-- Ler a hora de início e a hora de fim de um jogo de Xadrez (considere apenas horas inteiras, sem os
+minutos) e calcule a duração do jogo em horas, sabendo-se que o tempo máximo de duração do jogo é
+de 24 horas e que o jogo pode iniciar em um dia e terminar no dia seguinte.  -->
+    <script>
+        var Inicio = prompt("Digite o horário de início da partida: ");
+        var Fim = prompt("Digite o horário de fim da partida: ");
+        if (Fim > Inicio) {
+        alert("A partida durou " + parseInt(Fim - Inicio) + " hora! ");}
+         else {
+        alert("A partida durou " + parseInt(Fim - Inicio + 24) + " hora! ");}
+</script>
+</body>
+</html>

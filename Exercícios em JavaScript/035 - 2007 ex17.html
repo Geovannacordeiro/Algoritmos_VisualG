@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calcular a média aritmética simples</title>
+</head>
+
+<body>
+<!-- Ler as notas da 1a. e 2a. avaliações de um aluno. Calcular a média aritmética simples e escrever
+uma mensagem que diga se o aluno foi ou não aprovado (considerar que nota igual ou maior que 6 o
+aluno é aprovado). Escrever também a média calculada.  -->
+    <script>
+        var nota1 = parseInt(prompt("Digite a primeira nota:"));
+        var nota2 = parseInt(prompt("Digite a segunda nota:"));
+        var media = (nota1 + nota2)/2;
+
+        if (media > 6) {
+            alert("Aluno aprovado!");
+        } else {            
+            alert("Aluno reprovado!");
+        }
+    </script>
+</body>
+
+</html>

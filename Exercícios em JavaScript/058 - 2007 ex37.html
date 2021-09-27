@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Geovanna Souza Cordeiro Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Uma fruteira está vendendo frutas com a seguinte tabela de preços:</title>
+</head>
+
+<body>
+<!-- Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$ 25,00, receberá
+ainda um desconto de 10% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de
+morangos e a quantidade (em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente.  -->
+
+    <script>
+        var morangos = parseInt(prompt("Digite a quantida em quilos de morangos que desejas comprar:"));
+        var macas = parseInt(prompt("Digite a quantida em quilos de maçãs que desejas comprar:"));
+        var preco = parseFloat(morangos * 2.5 + macas * 1.8);
+
+        if (macas + morangos > 8 || preco > 25) {
+            alert("O valor da compra será de R$:" + (preco - (preco * 0.1)).toFixed(2));
+        } else {
+            alert("O valor da compra será de R$:" + preco.toFixed(2));
+        }
+    </script>
+</body>
+</html>

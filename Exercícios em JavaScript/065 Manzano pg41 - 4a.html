@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="keywords" content="JavaScript, Programação, Lógica">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <meta name="description" content="Ler valores e apresenta a diferença do maior pelo menor">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferença de valores</title>
+</head>
+<body>
+    <!-- Ler dois valores numéricos inteiros e apresentar o resultado da diferença do maior pelo menor valor. -->
+
+
+
+    <script>
+
+        var n1 = prompt("Digite o primeiro valor: ")
+        var n2 = prompt("Digite o segundo valor: ")
+        var maior = null
+        if (n1 > n2) {
+            maior = n1 - n2
+            alert(`O Maior valor é ${n1}\nO Menor valor é ${n2}\nA diferença é de ${maior}`)
+        } else if (n2 > n1) {
+            maior = n2 - n1
+            alert(`O Maior valor é ${n2}\nO Menor valor é ${n1}\nA diferença é de ${maior}`)
+        } else {
+            alert(`Os valores são iguais, portanto, não há diferença.`)
+        }
+
+    </script>
+</body>
+</html>

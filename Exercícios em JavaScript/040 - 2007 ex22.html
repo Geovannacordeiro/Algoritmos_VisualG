@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Geovanna Souza Cordeiro Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jornada de trabalho semanal </title>
+</head>
+
+<body>
+<!-- A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais
+de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%.
+Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva
+o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas
+(considere que o mês possua 4 semanas exatas).  -->
+    <script>
+        var horas = prompt("Digite a horas trabalhadas do funcionário esse mês: ");
+        var salarioHora = prompt("Digite o salário por hora em reais: ");
+        if (horas > 160) {
+            alert("O funcionário receberá R$:" + (((horas - 160) * 1.5 + 160) * salarioHora).toFixed(2) +
+                " de salário esse mês.");
+        } else {
+            alert("O funcionário receberá R$:" + (horas * salarioHora).toFixed(2) + " de salário esse mês!");
+        }
+    </script>
+    
+</body>
+
+</html>q

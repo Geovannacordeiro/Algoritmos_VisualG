@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Geovanna Souza Cordeiro Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valor correspondente ao salário mensal </title>
+</head>
+
+<body>
+<!--  Ler o valor correspondente ao salário mensal (variável SM) de um trabalhador e também o valor do
+percentual de reajuste (variável PR) a ser atribuído. Apresentar o valor do novo salário (variável NS). -->
+
+    <script>
+        var salarioMensal = parseFloat(prompt("Digite o valor do salário mensal do funcionário em reais: "));
+        var reajuste = parseFloat(prompt("Digite o valor do reajuste em porcentagem: "));
+        
+        alert("Um salário de R$:" + salarioMensal.toFixed(2) + " que recebe um reajuste de " + reajuste + "% se tornará R$:" + (salarioMensal + (reajuste * salarioMensal / 100)).toFixed(2));
+    </script>
+</body>
+</html>

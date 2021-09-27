@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="JavaScript, Código, Lógica">
+    <meta name="description" content="Troca de A para B">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <title>Troca de A para B</title>
+</head>
+<body>
+        <!-- Ler dois valores (inteiros, reais ou caracteres) para as variáveis A e B, e efetuar a troca dos valores de
+             forma que a variável A passe a possuir o valor da variável B e a variável B passe a possuir o valor da
+             variável A. Apresentar os valores trocados -->
+    <script>
+        
+        var a = parseInt(prompt("Digite o valor de A: "));
+        var b = parseInt(prompt("Digite o valor de B: "));
+        var a2 = a;
+        var b2 = b;
+        a = b2;
+        b = a2;
+        alert("O valor de A é "+a+" e o de B é "+b);
+
+    </script>
+</body>
+</html>

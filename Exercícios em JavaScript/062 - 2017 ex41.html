@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="keywords" content="JavaScript, Programação, Lógica">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <meta name="description" content="Algoritmo para calcular a média de um aluno">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de Aproveitamento 2.0</title>
+</head>
+<body>
+    <!-- Faça um algoritmo para ler as 3 notas obtidas por um aluno nas 3 verificações e a média dos 
+         exercícios que fazem parte da avaliação. -->
+
+
+
+    <script>
+
+        var n1 = parseFloat(prompt("Digite a 1° Nota do aluno"))
+        var n2 = parseFloat(prompt("Digite a 2° Nota do aluno"))
+        var n3 = parseFloat(prompt("Digite a 3° Nota do aluno"))
+        var ex = parseFloat(prompt("Média na Avaliação dos exercícios;"))
+        mediaAproveitamento = ((n1 + n2 * 2) + (n3 * 3) + ex) / 7
+        var conceito = null
+        if (mediaAproveitamento >= 9) {
+            conceito = "A"
+        } else if (mediaAproveitamento >= 7.5 && mediaAproveitamento < 9) {
+            conceito = "B"
+        } else if (mediaAproveitamento >= 6 && mediaAproveitamento < 7.5) {
+            conceito = "C"
+        } else if (mediaAproveitamento < 6) {
+            conceito = "D"
+        }
+        alert(`Sua Nota foi ${mediaAproveitamento.toFixed(2)}`)
+        alert(`A sua média geral é: ${conceito}.`)
+
+    </script>
+</body>
+</html>

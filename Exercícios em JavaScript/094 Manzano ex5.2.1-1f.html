@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="soma dos valores">
+    <meta name="keywords" content="Javascript, Aula, manzano">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <title>Efetue a leitura sucessiva de valores numéricos e apresente no final o 
+        total do somatório, a média aritmética e o total de valores lidos</title>
+</head>
+<body>
+<!-- 
+    Elaborar um programa que efetue a leitura sucessiva de valores numéricos e apresente no final o 
+            total do somatório, a média aritmética e o total de valores lidos. O programa deve fazer as leituras 
+            dos valores enquanto o usuário estiver fornecendo valores positivos. Ou seja, o programa deve 
+            parar quando o usuário fornecer um valor negativo. Não se esqueça que o usuário pode entrar 
+            como primeiro número um número negativo, portanto, cuidado com a divisão por zero no cálculo da 
+            média.  -->
+
+    <script>
+
+        var i = 0 
+        var soma = 0
+        var valor = 0
+        do {
+            valor = parseInt(prompt("Informe um número: "));
+            if (valor < 0) {
+                break;
+            } else {
+                soma = soma + valor;
+                i++;
+            }
+        } while ( valor >= 0 );
+        alert("Abra o console para ver o resultado")
+        console.log(`Total de números: ${i}\nMédia: ${soma/i}\nSoma: ${soma}`);
+    </script>
+</body>
+
+</html>

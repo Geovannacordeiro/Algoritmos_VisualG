@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="autor" content="Geovanna Souza Cordeiro Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa.</title>
+</head>
+
+<body>
+<!-- Ler o salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa. Sabendo-se que
+ele recebe uma comissão de 3% sobre o total das vendas até R$ 1.500,00 mais 5% sobre o que
+ultrapassar este valor, calcular e escrever o seu salário total.  -->
+
+    <script>
+        var salarioFixo = parseFloat(prompt("Digite o salário fixo do vendedor em reais: "));
+        var vendas = parseFloat(prompt("Digite o valor das vendas do vendedor em reais: "));
+
+        if (vendas > 1500) {
+            alert("O salário do vendedor, esse mês, será de R$:" + ((((vendas - 1500) * 0.05) + (1500 * 0.03) + salarioFixo)).toFixed(2));
+        } else {
+            alert("O salário do vendedor, esse mês, será de R$:" + ((vendas * 0.03) + salarioFixo).toFixed(2));
+        }
+    </script>
+</body>
+</html>

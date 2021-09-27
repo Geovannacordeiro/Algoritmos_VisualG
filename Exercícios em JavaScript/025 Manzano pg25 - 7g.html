@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="JavaScript, Código, Lógica">
+    <meta name="description" content="ABCD Adição e Multiplicação">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <title>ABCD Adição e Multiplicação</title>
+</head>
+<body>
+    <!-- Ler quatro números inteiros e apresentar o resultado da adição e multiplicação, baseando-se na
+        utilização do conceito da propriedade distributiva. Ou seja, se forem lidas as variáveis A, B, C, e D,
+        devem ser somadas e multiplicadas A com B, A com C e A com D. Depois B com C, B com D e por fim
+        C com D. Perceba que será necessário efetuar seis operações de adição e seis operações de
+        multiplicação e apresentar doze resultados de saída.-->
+    <script>
+        
+        var a = parseInt(prompt("Digite o valor de A: "));
+        var b = parseInt(prompt("Digite o valor de B: "));
+        var c = parseInt(prompt("Digite o valor de C: "));
+        var d = parseInt(prompt("Digite o valor de D: "));
+        s1 = a+b;
+        alert(a+"+"+b+"="+s1);
+        s2 = a+c;
+        alert(a+"+"+c+"="+s2);
+        s3 = a+d;
+        alert(a+"+"+d+"="+s3);
+        s4 = b+c;
+        alert(b+"+"+c+"="+s4);
+        s5 = b+d;
+        alert(b+"+"+d+"="+s5);
+        s6 = c+d;
+        alert(c+"+"+d+"="+s6);
+        m1 = a*b;
+        alert(a+"X"+b+"="+m1);
+        m2 = a*c;
+        alert(a+"X"+c+"="+m2);
+        m3 = a*d;
+        alert(a+"X"+d+"="+m3);
+        m4 = b*c;
+        alert(b+"X"+c+"="+m4);
+        m5 = b*d;
+        alert(b+"X"+d+"="+m5);
+        m6 = c*d;
+        alert(c+"X"+d+"="+m6);
+
+    </script>
+</body>
+</html>

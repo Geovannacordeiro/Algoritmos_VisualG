@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="somatório dos grãos">
+    <meta name="keywords" content="Javascript, Aula, manzano">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <title>Apresente o somatório do número de grãos de trigo que se pode obter num tabuleiro de xadrez</title>
+</head>
+<body>
+    <!-- Elaborar um programa que efetue o cálculo e no final apresente o somatório do número de grãos de 
+            trigo que se pode obter num tabuleiro de xadrez, obedecendo à seguinte regra: colocar um grão de 
+            trigo no primeiro quadro e nos quadros seguintes o dobro do quadro anterior. Ou seja, no primeiro 
+            quadro coloca-se 1 grão, no segundo quadro colocam-se 2 grãos (neste momento têm-se 3 grãos), 
+            no terceiro quadro colocam-se 4 grãos (tendo neste momento 7 grãos), no quarto colocam-se 8 
+            grãos (tendo-se então 15 grãos) até atingir o sexagésimo quarto (64o
+            ) quadro. Utilize variáveis do 
+            tipo real como acumuladores. -->
+    <script>
+         var i = 0, num = 0, graos = 1;
+         do{
+            graos = graos * 2;
+            num = num + graos;
+            i++;
+         } while( i < 63 );
+         alert("Abra o console para ver o resultado")
+         console.log(`Quantidade do total de grãos: ${graos}`);
+
+    </script>
+</body>
+</html>

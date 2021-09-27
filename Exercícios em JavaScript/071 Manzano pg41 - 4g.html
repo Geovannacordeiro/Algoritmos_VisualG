@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="keywords" content="JavaScript, Programação, Lógica">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <meta name="description" content="Mostra os numeros divisíveis por 2 e 3">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisíveis por 2 e 3</title>
+</head>
+<body>
+    <!-- Efetuar a leitura de quatro números inteiros e apresentar os números que são divisíveis por 2 e 3.  -->
+
+
+    <script>
+
+        var valor1 = parseFloat(prompt("Digite o primeiro valor: "))
+        var valor2 = parseFloat(prompt("Digite o segundo valor: "))
+        var valor3 = parseFloat(prompt("Digite o terceiro valor: "))
+        var valor4 = parseFloat(prompt("Digite o quarto valor: "))
+        if (valor1 % 2 == 0 && valor1 % 3 == 0) {
+            alert(`Primeiro valor é divísivel por 2 e 3: ${valor1}\nDividido por  2 = ${valor2/2}\nDividido por 3 = ${valor3/3} `)
+        } else if (valor2 % 2 == 0 && valor2 % 3 == 0) {
+            alert(`Segundo valor é divisível por 2 e 3 = ${valor2}\nDividido por 2 = ${valor2/2}\nDividido por 3 = ${valor2/3}`)
+        } else if (valor3 % 2 == 0 && valor3 % 3 == 0) {
+            alert(`Segundo valor é divisível por 2 e 3 = ${valor3}\nDividido por 2 = ${valor3/2}\nDividido por 3 = ${valor3/3}`)
+        } else if (valor4 % 2 == 0 && valor4 % 3 == 0) {
+            alert(`Segundo valor é divisível por 2 e 3 = ${valor4}\nDividido por 2 = ${valor4/2}\nDividido por 3 = ${valor4/3}`)
+        }
+
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="keywords" content="JavaScript, Programação, Lógica">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <meta name="description" content="Calcula o percentual de reajuste do salario">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste Salarial</title>
+</head>
+<body>
+    <!-- Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste.
+         Calcular e escrever o valor do novo salário -->
+
+
+    <script>
+
+        var salarioatual = parseFloat(prompt("Digite seu salario mensal atual: "))
+        var percentualreajuste = parseFloat(prompt("Digite o seu percentual de reajuste"))
+        var salariofinal = salarioatual+percentualreajuste*salarioatual/100
+        alert(`O novo salário corresponde a: R$${salariofinal}`)
+
+    </script>
+</body>
+</html>
