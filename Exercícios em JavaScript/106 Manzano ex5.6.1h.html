@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="potência de uma base elevada a um expoente">
+    <meta name="keywords" content="Javascript, Aula, manzano">
+    <meta name="author" content="Geovanna Souza Cordeiro Silva">
+    <title>Resultado o valor de uma potência de uma base 
+        qualquer elevada a um expoente qualquer</title>
+</head>
+<body>
+    <!-- Elaborar um programa que apresente como resultado o valor de uma potência de uma base 
+qualquer elevada a um expoente qualquer, ou seja, de BE
+, em que B é o valor da base e E o valor 
+do expoente. Observe que neste exercício não pode ser utilizado o operador de exponenciação do 
+portuguol (^). -->
+
+
+
+    <script >
+        var b = parseInt(prompt("Base da potência: "));
+        var e = parseInt(prompt("Valor do expoente: "));
+        var aux = b;
+        for(let i = 0; i <= e; i++) {
+            b = (i == 0) ? 1 : b * aux;
+        }
+        alert("Abra o console para verificar o resultado")
+        console.log(`O Resultado é equivalente a: ${b}`);
+    </script>
+</body>
+</html>
