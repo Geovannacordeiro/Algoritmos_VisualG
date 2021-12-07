@@ -1,2 +1,3 @@
 # Algoritmos_VisualG
-Exercícios no VisualG, Logica de Programação, JavaScript e Portugol.
+Exercícios no VisualG, Logica de Programação, Portugol, JavaScript e Java!
+
